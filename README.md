@@ -7,7 +7,7 @@ First, install dependencies
 npm install
 ```
 
-Start the server:
+Start the server
 ```
 npm start
 ```
