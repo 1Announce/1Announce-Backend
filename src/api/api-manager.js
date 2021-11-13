@@ -9,7 +9,7 @@ class ApiManager {
         const observable = ApiService.getAnnouncements();
         observable.subscribe({
             next: ret => {
-                console.log('ApiManager.getAnnouncements: Data retrieved!', ret.data);
+                console.log('ApiManager.getAnnouncements: Data retrieved!');
                 this.announcements = ret.data;
             },
             error: err => {
@@ -24,7 +24,7 @@ class ApiManager {
         const observable = ApiService.getUsers();
         observable.subscribe({
             next: ret => {
-                console.log('ApiManager.getUsers: Data retrieved!', ret.data);
+                console.log('ApiManager.getUsers: Data retrieved!');
                 this.users = ret.data;
             },
             error: err => {
@@ -35,6 +35,10 @@ class ApiManager {
         return observable;
     }
 
+    static createAnnouncement(announcement) {
+        // Create DB entry
+        // Create EventBridge Event
+    }
 }
 
 module.exports = ApiManager;

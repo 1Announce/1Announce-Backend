@@ -10,6 +10,13 @@ router.get('/', (req, res) => {
 /* POST /announcement */
 
 router.post('/', (req, res) => {
+    // Extract announcement data from body
+    // 400 ERROR if bad body data
+
+    // Invoke ApiManager.createAnnouncement
+    // 200 OK
+    // 500 ERROR
+
     res.status(200).json({ message: 'Create Announcement Info' });
 });
 
