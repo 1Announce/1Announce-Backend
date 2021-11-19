@@ -1,3 +1,4 @@
+const Utils = require('../utils');
 const ApiService = require('./api-service');
 
 class ApiManager {
@@ -35,10 +36,33 @@ class ApiManager {
         return observable;
     }
 
-    static createAnnouncement(announcement) {
+    static createAnnouncement(userId, content) {
+        let announcement = {
+            userId: userId,
+            content: content,
+            createTime: Date.now(),
+            aId: Utils.generateAnnouncementId(),
+            status: Utils.PENDING
+        }
+
+        return announcement;
+
         // Create DB entry
         // Create EventBridge Event
+
+        // const observable = ApiService.createAnnouncement(announcement);
+        // observable.subscribe({
+        //     next: () => {
+
+        //     },
+        //     error: (err) => {
+
+        //     }
+        // });
+        // return observable;
     }
+
+    static 
 }
 
 module.exports = ApiManager;

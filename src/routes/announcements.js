@@ -6,6 +6,8 @@ const ApiManager = require('../api/api-manager');
 /* GET /announcements */
 
 router.get('/', (req, res) => {
+    console.log()
+
     ApiManager.getAnnouncements().subscribe({
         next: () => {
             res.status(200).json({ message: 'OK', announcements: ApiManager.announcements });
