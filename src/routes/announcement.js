@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const { query, body, validationResult } = require('express-validator'); 
-const ApiManager = require('../api/api-manager');
+const { body, validationResult } = require('express-validator'); 
+const AnnouncementManager = require('../utils/announcement-manager');
 
 /* GET /announcement ?aId= */
 
@@ -19,25 +19,22 @@ router.post(
     '/',
     body('userId')
         .isString(),
-    body('content')
-        .isArray(),
+    body('announcement')
+        .exists(),
     (req, res) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) return res.status(400).json({ message: 'Bad request', errors: errors.array() });
 
-        const { userId, content } = req.body;
+        const { userId, announcement } = req.body;
 
-        const announcement = ApiManager.createAnnouncement(userId, content);
-        res.status(200).json({ message: `Announcement ${announcement.aId} created` });
+        try {
+            AnnouncementManager.createAnnouncement(userId, announcement);
+        } catch (err) {
+            console.log("AnnouncementManager.createAnnouncement failed!", err);
+            return res.status(500).json({ message: 'Internal Server Error' });
+        }
 
-        // ApiManager.createAnnouncement(userId, content).subscribe({
-        //     next: announcement => {
-        //         res.status(200).json({ message: `Announcement ${announcement.aId} created` });
-        //     },
-        //     error: err => {
-        //         res.status(500).json({ message: `Failed to create announcement` });
-        //     }
-        // });
+        res.status(200).json({ message: `Announcement ${announcement.id} created` });
 });
 
 
