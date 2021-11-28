@@ -5,7 +5,12 @@
             "contents": [
                 {
                     "text": "First message",
-                    "attachments": ["base64-data-1", "base64-data-2"]
+                    "attachments": [
+                        {
+                            "filename": "name",
+                            "base64": "base64-data"
+                        }
+                    ]
                 }
             ],
             "createTime": 1636318519916, 
@@ -17,11 +22,12 @@
             "contents": [
                 {
                     "text": "First message",
-                    "attachments": ["base64-data-1", "base64-data-2"]
-                },
-                {
-                    "text": "Second message",
-                    "attachments": ["base64-data-1"]
+                    "attachments": [
+                        {
+                            "filename": "name",
+                            "base64": "base64-data"
+                        }
+                    ]
                 }
             ],
             "createTime": 1636318519916, 
@@ -33,7 +39,12 @@
             "contents": [
                 {
                     "text": "First message",
-                    "attachments": ["base64-data-1", "base64-data-2"]
+                    "attachments": [
+                        {
+                            "filename": "name",
+                            "base64": "base64-data"
+                        }
+                    ]
                 }
             ],
             "createTime": 1636318519916, 
@@ -45,15 +56,12 @@
             "contents": [
                 {
                     "text": "First message",
-                    "attachments": ["base64-data-1", "base64-data-2"]
-                },
-                {
-                    "text": "Second message",
-                    "attachments": ["base64-data-1"]
-                },
-                {
-                    "text": "Third message",
-                    "attachments": ["base64-data-1", "base64-data-2", "base64-data-3", "base64-data-4"]
+                    "attachments": [
+                        {
+                            "filename": "name",
+                            "base64": "base64-data"
+                        }
+                    ]
                 }
             ],
             "createTime": 1636318519916, 

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const ApiManager = require('../api/api-manager');
+const ApiManager = require('../utils/api-manager');
 
 /* GET /announcements */
 

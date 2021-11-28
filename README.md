@@ -2,22 +2,28 @@
 
 ## Usage
 
-First, install dependencies
+1. First, install dependencies
 ```
 npm install
 ```
 
-Install Mock JSON Server
+2. Install Mock JSON Server
 ```
 npm install -g json-server
 ```
 
-Start JSON Server
+3. Configure AWS credentials in `.env`
+```
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+```
+
+4. Start JSON Server
 ```
 json-server --watch mock-server/db.json -p 5050
 ```
 
-Start the server
+5. Start the server
 ```
 node .
 ```

@@ -11,6 +11,5 @@ app.use(cors());
 app.use('/', require('./routes/index'));
 app.use('/announcement', require('./routes/announcement'));
 app.use('/announcements', require('./routes/announcements'));
-app.use('/users', require('./routes/users'));
 
 module.exports = app;

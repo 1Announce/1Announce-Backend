@@ -8,13 +8,9 @@ class ApiService {
         return from( axios.get(this.SERVICE_URL + 'announcements') );
     }
 
-    static getUsers() {
-        return from( axios.get(this.SERVICE_URL + 'users') );
-    }
-
-    static createAnnouncement(announcement) {
-        return from( axios.post(this.SERVICE_URL + 'announcements', { ...announcement }) );
-    }
+    // static createAnnouncement(announcement) {
+    //     return from( axios.post(this.SERVICE_URL + 'announcements', { ...announcement }) );
+    // }
 }
 
 module.exports = ApiService;
