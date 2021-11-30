@@ -1,4 +1,5 @@
 # Group A Back End
+[![Build Status](https://app.travis-ci.com/1Announce/Group-A-Back-End.svg?branch=master)](https://app.travis-ci.com/1Announce/Group-A-Back-End)
 
 ## Usage
 
