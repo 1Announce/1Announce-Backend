@@ -8,8 +8,6 @@ install:
   - npm ci
   - npm install
   - npm install -g json-server
-before script:
-  - json-server --watch mock-server/db.json -p 5050
 script: 
   - npm test
 
