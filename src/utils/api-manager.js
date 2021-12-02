@@ -21,16 +21,17 @@ class ApiManager {
         return observable;
     }
 
-    // static createAnnouncement(userId, announcement) {
-    //     const data = {
-    //         id: announcement.id,
-    //         messages: announcement.messages,
-    //         schedule: announcement.schedule,
-    //         userId: userId
-    //     }
+    static createAnnouncement(userId, announcement) {
+        const data = {
+            id: announcement.id,
+            messages: announcement.messages,
+            schedule: announcement.schedule,
+            userId: userId,
+            createTime: Date.now()
+        }
 
-    //     ApiService.postAnnouncement(data);
-    // }
+        ApiService.postAnnouncement(data);
+    }
 }
 
 module.exports = ApiManager;

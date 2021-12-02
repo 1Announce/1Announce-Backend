@@ -1,96 +1,81 @@
 {
-    "announcements": [
+  "announcements": [
+    {
+      "id": "41f2f87b-ca04-4ec1-8884-0f6283832726",
+      "messages": [
         {
-            "id": 1,
-            "contents": [
-                {
-                    "text": "First message",
-                    "attachments": [
-                        {
-                            "filename": "name",
-                            "base64": "base64-data"
-                        }
-                    ]
-                }
-            ],
-            "createTime": 1636318519916, 
-            "status": 0,
-            "user": 11
-        },
-        {
-            "id": 2,
-            "contents": [
-                {
-                    "text": "First message",
-                    "attachments": [
-                        {
-                            "filename": "name",
-                            "base64": "base64-data"
-                        }
-                    ]
-                }
-            ],
-            "createTime": 1636318519916, 
-            "status": 0,
-            "user": 11
-        },
-        {
-            "id": 3,
-            "contents": [
-                {
-                    "text": "First message",
-                    "attachments": [
-                        {
-                            "filename": "name",
-                            "base64": "base64-data"
-                        }
-                    ]
-                }
-            ],
-            "createTime": 1636318519916, 
-            "status": 0,
-            "user": 22
-        },
-        {
-            "id": 4,
-            "contents": [
-                {
-                    "text": "First message",
-                    "attachments": [
-                        {
-                            "filename": "name",
-                            "base64": "base64-data"
-                        }
-                    ]
-                }
-            ],
-            "createTime": 1636318519916, 
-            "status": 0,
-            "user": 33
+          "text": "EXAMPLE YEEE",
+          "attachments": {
+            "filename": "meme.jpg",
+            "base64": "..."
+          }
         }
-    ],
-
-    "users": [
+      ],
+      "schedule": 1638123600000,
+      "userId": "nykolas",
+      "createTime": 1638242758208
+    },
+    {
+      "id": "886edf67-1086-443c-a58d-a6b6bb5012f3",
+      "messages": [
         {
-            "id": 11,
-            "firstName": "Bobby",
-            "lastName": "Martinez",
-            "phoneNumber": "5555555555",
-            "email": "bobbymartinez@gmail.com"
-        },
-        {
-            "id": 22,
-            "firstName": "Timmy",
-            "lastName": "Bimmy",
-            "phoneNumber": "5555555555",
-            "email": "tb.immy@gmail.com"
-        },
-        {
-            "id": 33,
-            "firstName": "kathy",
-            "lastName": "alvarez",
-            "phoneNumber": "5555555555",
-            "email": "kathya@gmail.com"
+          "text": "EXAMPLE YEEE",
+          "attachments": {
+            "filename": "meme.jpg",
+            "base64": "..."
+          }
         }
-    ]
+      ],
+      "schedule": 1638242880000,
+      "userId": "nykolas",
+      "createTime": 1638242876193
+    },
+    {
+      "id": "3e966532-91eb-4c07-afdf-a265158f73ba",
+      "messages": [
+        {
+          "text": "Scheduled for tomorrow at 8AM"
+        }
+      ],
+      "schedule": 1638280800000,
+      "userId": "nykolas",
+      "createTime": 1638244597132
+    },
+    {
+      "id": "ea487316-b1c5-4d00-912e-79549fcae343",
+      "messages": [
+        {
+          "text": "Scheduled for 9:58 PM"
+        }
+      ],
+      "schedule": 1638244680000,
+      "userId": "nykolas",
+      "createTime": 1638244633522
+    },
+    {
+      "id": "5b2666df-a37e-4458-bcc9-15216bab12fb",
+      "messages": [
+        {
+          "text": "Big Memes from the Front-End"
+        },
+        {
+          "text": "Big Memes Part 2"
+        }
+      ],
+      "schedule": 1638244800000,
+      "userId": "nykolas",
+      "createTime": 1638244787284
+    },
+    {
+      "id": "b3769014-0233-4e93-8d66-064df8b4784a",
+      "messages": [
+        {
+          "text": "Big Memes from the Front-End 3:04p"
+        }
+      ],
+      "schedule": 1638435840000,
+      "userId": "nykolas",
+      "createTime": 1638479011834
+    }
+  ]
 }
