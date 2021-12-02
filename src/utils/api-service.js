@@ -8,9 +8,9 @@ class ApiService {
         return from( axios.get(this.SERVICE_URL + 'announcements') );
     }
 
-    // static createAnnouncement(announcement) {
-    //     return from( axios.post(this.SERVICE_URL + 'announcements', { ...announcement }) );
-    // }
+    static postAnnouncement(data) {
+        return from( axios.post(this.SERVICE_URL + 'announcements', data) );
+    }
 }
 
 module.exports = ApiService;

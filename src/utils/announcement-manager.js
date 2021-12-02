@@ -11,7 +11,7 @@ class AnnouncementManager {
         announcement.id = Utils.getUniqueId();
 
         AwsManager.createEvent(announcement);
-        // ApiManager.postAnnouncement(userId, announcement);
+        ApiManager.createAnnouncement(userId, announcement);
     }
 }
 
