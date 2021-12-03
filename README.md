@@ -1,6 +1,19 @@
 # Group A Back End
 [![Build Status](https://app.travis-ci.com/1Announce/Group-A-Back-End.svg?branch=master)](https://app.travis-ci.com/1Announce/Group-A-Back-End)
 
+ExpressJS Back-End API to service 1Announce Web Application. Controller for database and AWS infrastructure.
+
+## Dependencies
+
+- Node.JS
+- express
+- rxjs
+- axios
+- aws-sdk
+- cors
+- uuidv4
+- express-validator
+
 ## Usage
 
 1. First, install dependencies
