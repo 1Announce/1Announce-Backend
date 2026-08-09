@@ -12,6 +12,7 @@ The backend accepts an announcement (message content + delivery schedule), persi
 
 - **Business case:** [1Announce Slides.pdf](<docs/1Announce Slides.pdf>) — project pitch deck
 - **API reference:** [api_reference.md](docs/api_reference.md) — route-by-route API reference
+- **Video Demonstration:** https://youtu.be/1MaAlAEfqFc
 
 ## Associated projects
 
